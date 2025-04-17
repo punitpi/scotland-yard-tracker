@@ -1,0 +1,23 @@
+{
+    "name": "scotland-yard-tracker",
+    "version": "1.0.0",
+    "description": "Scotland Yard board game tracker",
+    "main": "index.js",
+    "scripts": {
+        "start": "node server/server.js",
+        "server": "cd server && npm run dev",
+        "client": "cd client && npm start",
+        "dev": "concurrently \"npm run server\" \"npm run client\"",
+        "install-all": "npm install && cd server && npm install && cd ../client && npm install"
+    },
+    "keywords": [
+        "scotland yard",
+        "board game",
+        "tracker"
+    ],
+    "author": "",
+    "license": "MIT",
+    "devDependencies": {
+        "concurrently": "^7.6.0"
+    }
+}
